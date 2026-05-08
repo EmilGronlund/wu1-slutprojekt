@@ -1,0 +1,156 @@
+:root {
+    --container-width: 58rem;
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+    --step-7: clamp(4.0311rem, 3.36rem + 3.3555vw, 5.9605rem);
+  
+    --color-dark: #000000;
+    --color-light: #ffffff;
+    --color-primary: #87C7FF;
+}
+  
+  
+html,
+body {
+    margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--step-1);
+}
+  
+img {
+    max-width: 100%;
+}
+  
+.site-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.55rem;
+  
+    font-size: 35px;
+    font-weight: 600;
+  
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  
+    padding: 1rem;
+    border-bottom: 6px solid #87C7FF;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+}
+  
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.logo {
+    margin-top: 2.5px;
+    width: 290px;
+    height: auto;
+}
+  
+.hero {
+    position: relative;
+}
+.hero > * {
+    grid-area: hero;
+}
+  
+.hero-content h2 {
+    font-size: var(--step-4);
+    color: var(--color-light);
+}
+  
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: start center;
+    text-align: center;
+    padding-top: 2%;
+}
+  
+.hero-image {
+    max-height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: var(--color-primary);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: auto;
+    margin-top: 250px;
+    justify-self: center;
+}
+  
+.btn:hover {
+    text-decoration: underline;
+}
+  
+.container {
+    width: min(100vw - 3rem, var(--container-width));
+    margin-inline: auto;
+}
+.region {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+  
+.site-foot {
+    color: var(--color-dark);
+    background-color: var(--color-primary);
+}
+  
+.site-foot ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.site-foot p {
+    margin-top: 3rem;
+}
+
+.car-list ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.car-list img {
+    border-radius: 5rem;
+    border: 7px solid #87C7FF;
+    margin-top: 5px;
+}
+.card {
+    background-color: rgb(230, 230, 230);
+    border: 2px solid black;
+    padding: 3rem;
+    border-radius: 5rem;
+    width: 30rem;
+}

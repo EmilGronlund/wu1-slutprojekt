@@ -136,11 +136,12 @@ nav {
     margin-top: 3rem;
 }
 
-.car-list ol {
+.car-list > ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 .car-list img {
     border-radius: 5rem;
@@ -152,5 +153,9 @@ nav {
     border: 2px solid black;
     padding: 3rem;
     border-radius: 5rem;
-    width: 30rem;
+    width: 20rem;
+    height: 21rem;
+}
+.card ul li {
+    margin-bottom: 0.5rem;
 }

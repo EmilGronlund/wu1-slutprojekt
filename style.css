@@ -11,7 +11,6 @@
     --color-primary: #87C7FF;
 }
 
-
 html,
 body {
     margin: 0;
@@ -66,50 +65,6 @@ nav {
     height: auto;
 }
 
-.hero {
-    position: relative;
-}
-.hero > * {
-    grid-area: hero;
-}
-
-.hero-content h2 {
-    font-size: var(--step-4);
-    color: var(--color-light);
-}
-
-.hero-content {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-content: start center;
-    text-align: center;
-    padding-top: 2%;
-}
-
-.hero-image {
-    max-height: 75vh;
-    width: 100%;
-    object-fit: cover;
-}
- 
-.btn {
-    display: inline-block;
-    padding: 16px 32px;
-    background-color: var(--color-primary);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    width: auto;
-    margin-top: 250px;
-    justify-self: center;
-}
-
-.btn:hover {
-    text-decoration: underline;
-}
-
 .container {
     width: min(100vw - 3rem, var(--container-width));
     margin-inline: auto;
@@ -160,6 +115,7 @@ nav {
 .card ul li {
     margin-bottom: 0.5rem;
 }
-.headquarters {
+.image {
     border-radius: 2rem;
+    border: 2px solid black;
 }
